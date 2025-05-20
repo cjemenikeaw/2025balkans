@@ -1,0 +1,203 @@
+/* download color palette from coolors - include 6-7 options */
+/* export hexcode from coolors - use css hex export */
+
+:root {
+    /* root applies to all css everywhere - broader than body */
+    /* these colors exist everywhere in the css/html page */
+    /* CSS HEX */
+    --yinmn-blue: #3d5a80ff;
+    --powder-blue: #98c1d9ff;
+    --light-cyan: #e0fbfcff;
+    --melon: #e7b4a5ff;
+    --burnt-sienna: #ee6c4dff;
+    --bole: #8c4f47ff;
+    --gunmetal: #293241ff;
+    /* test the following color palette */
+    --maize: #ffe74cff;
+    --african-violet: #ae76a6ff;
+    --misty-rose: #fae1dfff;
+    --cool-gray: #8b91acff;
+    --yale-blue: #1b4079ff;
+    --dark-purple: #422437ff;
+    --auburn: #a22522ff;
+}
+
+
+body {
+    background-color: lightgray;
+    text-align: center;
+    /* color: aqua; */
+    margin: 0px;
+    /* margin removes the gap between the menu bg color and the edge of the screen */
+}
+
+p, li {
+    text-align: left;
+}
+
+a {
+    color: var(--auburn);
+}
+
+.menu, .overview, .cityname, .foodList, .communism, .signage {
+    background-color: var(--powder-blue);
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 50px;
+    margin-top: 20px;
+    border: var(--gunmetal) groove 3px;
+    /* color: var(--gunmetal); */
+}
+
+.overview {
+    background-color: paleturquoise;
+}
+
+/* apply to unordered lists - auto-align space between bullet points */
+/* apply css just to the unordered list in the hours id (not the unordered list used in the menu bar, etc.) */
+#hours ul, #cityList ul {
+    display: table;
+    margin: 0 auto;
+}
+
+.cityname {
+    border: 3px double var(--african-violet);
+    padding: 10px;
+}
+
+/* add color schemes for each country/box */
+/* turkiye: white crescent + star on red background */
+#istanbul_desc, #istanbul_comm {
+    background-color: lightpink;
+}
+
+/* bulgaria: 3 horiz stripes: white top, green mid, red bottom */
+#sofia_desc, #sofia_comm {
+    background-color: lightgoldenrodyellow;
+    /* background-image: linear-gradient(135deg, white, green, red); */
+}
+
+/* albania: black two-headed eagle on red background */
+#tirana_desc, #tirana_comm {
+    background-color: lightgreen;
+}
+
+/* serbia: 3 horiz stripes: red top blue mid, white bottom */
+#belgrade_desc, #belgrade_comm {
+    background-color: lightskyblue;
+    /* background-image: linear-gradient(135deg, red, lightskyblue, white); */
+}
+
+/* kosovo: beige map of Kosovo beneath 7 white stars, on blue background */
+#kosovo_desc {
+    background-color: beige;
+    /* background-image: linear-gradient(135deg, white, green, red); */
+}
+
+/* bih:  yellow triangle with 9 white stars along the hypotenuse, on a navy blue background*/
+#sarajevo_desc {
+    background-color: lightsteelblue;
+}
+
+#comm_sum {
+    background-color: mintcream;
+}
+
+#sofia_comm, #tirana_comm, #belgrade_comm, #comm_sum {
+    margin: 25px;
+    padding: 10px;
+    border: 2px dashed grey;
+}
+/* end country-specific color-coding */
+
+
+.foodList {
+    /* text-align: left; */
+    background-color: lightslategray;
+    padding: 5px;
+    border: 2px ridge var(--gunmetal);
+}
+
+.foodpics {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* formatting for Signage page - flexboxes and sign groupings */
+.signage {
+    margin: 10px;
+}
+
+.signage_Flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.signage_flexbox {
+    border: solid 2px var(--gunmetal);
+}
+
+#signs_albania {
+    background-color: powderblue;
+    border: ridge 5px var(--auburn);
+}
+
+#signs_advice {
+    background-color: mistyrose;
+    border: ridge 5px var(--auburn);
+}
+
+#signs_food {
+    background-color: gray;
+    border: ridge 5px var(--auburn);  
+}
+
+#signs_misc {
+    background-color: var(--maize); 
+    border: ridge 5px var(--auburn);
+}
+/* end signage formatting */
+
+
+
+
+
+/* the following chunks are for the "flexBoxTest" page */
+.outerBox {
+    background-color: var(--burnt-sienna);
+    /* margin is outside, padding is inside */
+    padding: 25px;
+    margin: 50px;
+    margin-top: 30px;
+    border: var(--gunmetal) double 5px;
+}
+
+.barista, .ownerTest {
+    margin-bottom: 25px;
+    margin-top: 25px;
+    background-color: lightcyan;
+    padding: 20px;
+    border: var(--gunmetal) 10px ridge;
+}
+
+#baristaSection {
+    justify-content: space-around;
+}
+
+.flexTestSection {
+    background-color: powderblue;
+    display: flex;
+    border: var(--bole) 10px double;
+}
+
+/* override the background color being used in the barista section */
+#mainOwnerBlock {
+    background-color: var(--burnt-sienna);
+    color: var(--gunmetal);
+    /* flex-grow means this particular box expands to fit the rest of the block */
+    flex-grow: 1;
+    margin: 20px;
+}
+

@@ -1,0 +1,65 @@
+:root {
+    /* root applies to all css everywhere - broader than body */
+    /* these colors exist everywhere in the css/html page */
+    /* CSS HEX */
+    --yinmn-blue: #3d5a80ff;
+    --powder-blue: #98c1d9ff;
+    --light-cyan: #e0fbfcff;
+    --melon: #e7b4a5ff;
+    --burnt-sienna: #ee6c4dff;
+    --bole: #8c4f47ff;
+    --gunmetal: #293241ff;
+    /* test the following color palette */
+    --maize: #ffe74cff;
+    --african-violet: #ae76a6ff;
+    --misty-rose: #fae1dfff;
+    --cool-gray: #8b91acff;
+    --yale-blue: #1b4079ff;
+    --dark-purple: #422437ff;
+    --auburn: #a22522ff;
+}
+
+/* style the menu bar at the top */
+#menu ul {
+    /* remove bullets, add bg color, remove margin and padding */
+    list-style-type: none;
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    /* removes excess stuff*/
+    overflow: hidden;
+}
+
+#menu li {
+    float: right;
+    /* push the title to the left using one-off in-line css */
+}
+
+#menu li a {
+    /* add padding to the link so the background color surrounds the link */
+    /* format: top-bottom left-right (why did text order switch?) */
+    padding: 10px 10px;
+    /* activate link padding with block display */
+    display: block;
+    background-color: lightcyan;
+    color: darkblue;
+    text-decoration: none;
+    border: 1px black solid;
+}
+
+/* use a comma when applying the same css to multiple items */
+/* UPDATE THIS COLOR SCHEME */
+#menu li a:hover, #menu .active {
+    /* active only when hovering over a menu item */
+    background-color: var(--maize);
+    color: var(--bole);
+    /* background-color: var(--yale-blue);
+    color: var(--cool-gray); */
+}
+
+/* set the active menu page to have the hover color scheme (to show what page you're on)
+/* add class name to the anchor tag specifically (since that's where the hover color scheme is applied)*/
+/* #menu .active {
+    background-color: var(--light-cyan);
+    color: var(--bole);
+} */
