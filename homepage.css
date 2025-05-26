@@ -22,6 +22,12 @@
     --auburn: #a22522ff;
 }
 
+/* edit the header text in the menu bar */
+.headerstyle{
+     color: white; 
+     font-size: 16px
+}
+
 
 body {
     background-color: lightgray;
@@ -133,6 +139,7 @@ a {
 .signage_Flex {
     display: flex;
     justify-content: space-evenly;
+    border: ridge 2px var(--auburn);
 }
 
 .signage_flexbox {
@@ -141,22 +148,18 @@ a {
 
 #signs_albania {
     background-color: powderblue;
-    border: ridge 5px var(--auburn);
 }
 
 #signs_advice {
     background-color: mistyrose;
-    border: ridge 5px var(--auburn);
 }
 
 #signs_food {
     background-color: gray;
-    border: ridge 5px var(--auburn);  
 }
 
 #signs_misc {
     background-color: var(--maize); 
-    border: ridge 5px var(--auburn);
 }
 /* end signage formatting */
 
@@ -200,4 +203,3 @@ a {
     flex-grow: 1;
     margin: 20px;
 }
-
